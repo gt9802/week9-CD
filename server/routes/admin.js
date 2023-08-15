@@ -73,7 +73,7 @@ router.post('/signup', (req, res) => {
     res.json({ course });
   });
 
-  router.get('/hello admin', authenticateJwt, async(req,res)=>{
-    res.send("hi hello")
+  router.get('/hello', authenticateJwt, async(req,res)=>{
+    res.send("hi hello admin")
   })
   module.exports = router
