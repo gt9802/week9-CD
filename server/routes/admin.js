@@ -74,6 +74,6 @@ router.post('/signup', (req, res) => {
   });
 
   router.get('/hello', authenticateJwt, async(req,res)=>{
-    res.send("hi hello admin")
+    res.send("hi hello admin again")
   })
   module.exports = router
